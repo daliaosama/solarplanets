@@ -1,0 +1,481 @@
+@font-face {
+  font-family: "Antonio";
+  src: url(fonts/Antonio/static/Antonio-Medium.ttf);
+}
+@font-face {
+  font-family: "Spartan";
+  src: url(fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url(fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+  font-weight: bold;
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin:0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #070724;
+  background-image: url(images/background-stars.svg);
+  color: #ffffff;
+   display: flex;
+  flex-direction: column;
+   align-items: center;  
+} 
+header {
+  display: flex;
+  letter-spacing: -0.06rem;
+  line-height: 1.56rem;
+  align-items: center;
+  padding: 1.38rem 0 1.38rem 2rem;
+  height: 0.06rem;
+  column-gap: 49rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+#toppage {
+  font-family: "Antonio";
+  font-size: 1.75rem;
+  width: 6.81rem;
+  height: 2.25rem;
+}
+nav {
+  display: flex;
+  width: 41.65rem;
+  height:1.56rem
+}
+.btn {
+  background-color: transparent;
+  color: #ffffff;
+  width: 4.19rem;
+  height: 1.56rem;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Spartan";
+  font-weight: bold;
+  font-size: 0.69rem;
+}
+#menu {
+  display: none;
+}
+hr {
+   width: 99.5%;
+ border-color:#838391; ; 
+}
+#maincontainer {
+  display: flex;
+  flex-direction: column;
+  width: 69.38rem;
+  align-items: center;
+  margin-top: 3rem; 
+  justify-content: center;
+  row-gap:3rem;
+}
+#top {
+  display: flex;
+  width: 100%;
+  height: 33.81rem;
+}
+#img {
+  height: 100%;
+  width: 47.51rem; 
+  display: flex;
+   justify-content: center; 
+  position: relative;
+ align-items: center;
+ 
+}
+
+#img2 {
+  position: absolute;
+  width: 10.19rem;
+  height: 12.44rem;
+  top: 22rem;
+  left: 18.5rem;
+  display: none;
+}
+#planet {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 100%;
+  width: 21.88rem;
+}
+#planettop{
+  display: flex;
+  flex-direction: column;
+  height: 22.81rem;
+}
+#head {
+  font-family: "Antonio";
+  width: 16.44rem;
+  height: 6.50rem;
+  line-height: 1.56rem;
+  letter-spacing: 0.06rem;
+  font-size: 5rem;
+ align-content: center;
+}
+#par {
+  font-size: 0.88rem;
+  font-family: "Spartan";
+  width: 21.88rem;
+  height: 9.38rem;
+  line-height: 1.56rem;
+  letter-spacing: 0.06rem;
+}
+a {
+  color:#838391;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vw;
+  width: 21.88rem;
+  height: 11rem;
+}
+
+.description {
+  background-color: transparent;
+  color: #ffffff;
+  width: 21.88rem;
+  border-width: 1px;
+  border-color: #838391;;
+  height: 3rem;
+  cursor: pointer;
+  font-family: "Spartan";
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.56rem;
+  letter-spacing: 0.19rem;
+}
+.description:hover {
+  background-color: #38384f;
+}
+#details {
+  display: flex;
+  width: 100%;
+  column-gap: 2.06rem;
+  height: 8rem;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #838391;;
+  padding: 0.5rem 0 0 0.5rem;
+  box-sizing: border-box;
+  width: 15.94rem;
+  height: 6rem;
+  line-height: 1.56rem;
+}
+.lab {
+  font-size: 0.69rem;
+  font-family: "Spartan";
+  letter-spacing: 0.06rem;
+  color:#838391;
+  font-weight: bold;
+}
+span{
+  color:#838391;
+}
+.rotaion {
+  width: 8rem;
+}
+.evolution {
+  width: 8.75rem;
+}
+.radius {
+  width: 9rem;
+}
+.lab2 {
+  font-size: 2.5rem;
+  font-family: "Antonio";
+  height: 3.25rem;
+  letter-spacing: -0.13rem;
+}
+#temp {
+  width: 5.13rem;
+}
+#planetmenu,
+#planetInformation {
+  display: none;
+}
+#src {
+  font-family: "Spartan";
+  width: 10.25rem;
+  height: 1.56rem;
+  line-height: 1.56rem;
+  font-size: 0.88rem;
+  letter-spacing: 0.06rem;
+  color:#838391;
+}
+/*Tablet design*/
+@media only screen and (min-width:712px) and (max-width:801px) {
+  
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 8.56rem;
+    row-gap: 1rem;
+  }
+  nav {
+    justify-content: center;
+  }
+  #head {
+    font-size: 3rem;
+    width: 9.88rem;
+    height: 3.88rem;
+  }
+  #maincontainer {
+    width: 100%;
+    row-gap: 1rem;
+    margin-top: 1rem;
+  }
+  #top {
+    flex-direction: column;
+    height: 46.81rem;
+  }
+  #img {
+    width: 100%;
+    height: 28.81rem;
+  }
+  .img {
+    width: 18.13rem;
+    height: 18.13rem;
+  }
+  #img2 {
+    top: 23vh;
+    left: 39vw;
+  }
+  #planet {
+    width: 100%;
+    flex-direction: unset;
+    column-gap: 2vh;
+    height: 15.81rem;
+    justify-content: center;
+  }
+  #planettop {
+    width: 21.19rem;
+    height: 15.81rem;
+  }
+  #buttons {
+    width: 17.56rem;
+    height: 9.5rem;
+   align-self: center;
+    box-sizing: border-box;
+    row-gap: 3vw;
+  }
+  #details {
+    width: 90%;
+    column-gap: 2vh;
+  }
+  .detail {
+    width: 10.25rem;
+    height: 5.5rem;
+  }
+  .lab2 {
+    font-size: 24px;
+  }
+  #par {
+    height: 6.88rem;
+    width: 21.19rem;
+    font-size: 0.69rem;
+    line-height: 1.38rem;
+  }
+  .description {
+    width: 17.56rem;
+    height: 2.5rem;
+    line-height: 1.38rem;
+    font-size: 0.69rem;
+    letter-spacing: 0.13rem;
+  }
+}
+
+/*mobile design*/
+@media only screen and (max-width: 600px) and (min-width: 344px) {
+  body {
+    display: unset;
+  }
+  header {
+    flex-direction: unset;
+    width: 95%;
+    column-gap: unset;
+    justify-content: space-between;
+    height: 2rem;
+  }
+
+  #maincontainer {
+    display: none;
+  }
+  #planetInformation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+   align-items: center;
+   height:50rem
+  }
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+  #planetmenu {
+    display: flex;
+    flex-direction: column;
+    height:30.44rem;
+    width: 100%;
+    margin-top:2rem
+  }
+  .circle {
+    width: 1.25rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 1.25rem;
+  }
+  .solar {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 4rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .solartext {
+    font-family: "Spartan";
+    font-weight: bold;
+    font-size: 0.94rem;
+    line-height: 1.56rem;
+    letter-spacing: 0.06rem;
+    width: 4rem;
+    height: 1.56rem;
+  }
+  .sol {
+    display: flex;
+    column-gap: 2vh;
+    width: 6.88rem;
+    height: 1.56rem;
+    
+  }
+  .next {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+  }
+  #planetImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.44rem;
+    height: 14rem;
+  }
+  #imgplanet {
+    width: 9.63rem;
+    height: 9.63rem;
+  }
+  #des {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .button {
+    color: #ffffff;
+    background-color: transparent;
+    width: 5rem;
+    font-family: "Spartan";
+    font-weight: bold;
+    font-size: 0.56rem;
+    border-style: none;
+    line-height: 1.56rem;
+    letter-spacing: 0.13rem;
+    cursor: pointer;
+
+  }
+  #planetInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20.44rem;
+    height: 14.69rem;
+    justify-content: center;
+  }
+
+  #planetName {
+    font-size: 2.5rem;
+    font-family: "Antonio";
+    width: 5.25rem;
+    height: 3.25rem;
+    letter-spacing: -0.06rem;
+  }
+  #planetInfoParagraph {
+    font-family: "Spartan";
+    font-size: 11px;
+    line-height: 22px;
+    width: 20.44rem;
+    margin-left: 4vw;
+  }
+  #detailsDiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    height: 13.50rem;
+    width:20.44rem
+  }
+  .information {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #838391;
+    width: 20.44rem;
+    height: 3rem;
+    align-items: center;
+    padding: 10px;
+    line-height: 1rem;
+    box-sizing: border-box;
+  }
+  .info {
+    font-family: "Spartan";
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-transform: capitalize;
+    width: 5rem;
+    height: 1rem;
+    color:#838391;
+    text-transform: uppercase;
+  }
+  .infotext {
+    font-family: "Antonio";
+    font-size: 1.25rem;
+    letter-spacing: -0.06rem;
+  }
+  #sourceDiv {
+    width: 8.69rem;
+    height: 1.56rem;
+  }
+  #source {
+    font-family: "Spartan";
+    font-size: 12px;
+    color:#838391
+  }
+  #site {
+    font-family: "Spartan";
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  #surfaceimage {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 17.5rem;
+    display: none;
+  }
+}
